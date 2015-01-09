@@ -31,6 +31,7 @@ if not fs.exists( "/.thunderflash/config" ) then
         ui.cprint( "Setting Up..." )
         x, y = term.getSize()
         pb = ui.progressBar( x-1, y-1, x-1, colours.green, "Setup Progress" )
+        pb.progress( 1 )
         pb:draw()
       elseif selected2 == 2 then
         ui.clearArea( term.getSize() )

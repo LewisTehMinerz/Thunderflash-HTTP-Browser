@@ -22,20 +22,21 @@ if not fs.exists( "/thunderflash/config" ) then
     "Advanced (For Developers)",
   }
   selected = ui.menu( items, "Thunderflash Setup Utility", 1, false )
-  if selected == 1 then
-    selected2 = ui.menu( items2, "Thunderflash Setup Utility", 1, false )
-    if selected2 == 1 then
-      ui.clearArea( term.getSize() )
-      ui.cprint( "Setting Up..." )
-      x, y = term.getSize()
-      pb = ui.progressBar( x-1, y-1, x-1, colours.green, "Setup Progress" )
-      pb:draw()
-    elseif selected2 == 2 then
-      ui.clearArea( term.getSize() )
-      ui.cprint( "Advanced not done yet" )
-  elseif selected == 2 then
-    return "Terminated"
-  else
-    return false
+    if selected == 1 then
+      selected2 = ui.menu( items2, "Thunderflash Setup Utility", 1, false )
+      if selected2 == 1 then
+        ui.clearArea( term.getSize() )
+        ui.cprint( "Setting Up..." )
+        x, y = term.getSize()
+        pb = ui.progressBar( x-1, y-1, x-1, colours.green, "Setup Progress" )
+        pb:draw()
+      elseif selected2 == 2 then
+        ui.clearArea( term.getSize() )
+        ui.cprint( "Advanced not done yet" )
+    elseif selected == 2 then
+      return "Terminated"
+    else
+      return false
+    end
   end
 end

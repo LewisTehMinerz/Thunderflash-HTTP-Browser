@@ -10,7 +10,7 @@ if not fs.exists( "/.thunderflash" ) then
   thunder.createDirs()
 end
 if not fs.exists( "/.thunderflash/ui" ) then
-  thunder.getUI()
+  thunder.downloadUI()
 end
 thunder.getRedirects()
 os.loadAPI( "ui" )

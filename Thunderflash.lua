@@ -6,15 +6,15 @@ if not fs.exists( "/thunder" ) then
   h.close()
 end
 os.loadAPI( "thunder" )
-if not fs.exists( "/thunderflash" ) then
+if not fs.exists( "/.thunderflash" ) then
   thunder.makeDirs()
 end
-if not fs.exists( "/thunderflash/ui" ) then
+if not fs.exists( "/.thunderflash/ui" ) then
   thunder.getUI()
 end
 thunder.getRedirects()
 os.loadAPI( "ui" )
-if not fs.exists( "/thunderflash/config" ) then
+if not fs.exists( "/.thunderflash/config" ) then
   local items = {
     "Start Setup",
     "Terminate",

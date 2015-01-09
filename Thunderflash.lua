@@ -24,9 +24,9 @@ if not fs.exists( "/.thunderflash/config" ) then
     "Advanced (For Developers)",
   }
   selected = ui.menu( items, "Thunderflash Setup Utility", 1, false )
-    if selected == 1 then
+    if selected == "Start Setup" then
       selected2 = ui.menu( items2, "Thunderflash Setup Utility", 1, false )
-      if selected2 == 1 then
+      if selected2 == "Standard" then
         ui.clearArea( term.getSize() )
         ui.cprint( "Setting Up..." )
         x, y = term.getSize()

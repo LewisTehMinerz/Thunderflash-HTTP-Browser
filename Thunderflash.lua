@@ -13,7 +13,7 @@ if not fs.exists( "/.thunderflash/ui" ) then
   thunder.downloadUI()
 end
 thunder.getRedirects()
-os.loadAPI( "ui" )
+os.loadAPI( "/.thunderflash/ui" )
 if not fs.exists( "/.thunderflash/config" ) then
   local items = {
     "Start Setup",

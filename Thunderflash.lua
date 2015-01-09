@@ -7,7 +7,7 @@ if not fs.exists( "/thunder" ) then
 end
 os.loadAPI( "thunder" )
 if not fs.exists( "/.thunderflash" ) then
-  thunder.makeDirs()
+  thunder.createDirs()
 end
 if not fs.exists( "/.thunderflash/ui" ) then
   thunder.getUI()

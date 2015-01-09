@@ -1,3 +1,7 @@
+function createDirs()
+  fs.makeDir( "/thunderflash" )
+  fs.makeDir( "/thunderflash/tmp" )
+end
 function getRedirects()
   if fs.exists( "/thunderflash/tmp/redirect.thunder" ) then
     fs.delete( "/thunderflash/tmp/redirect.thunder" )

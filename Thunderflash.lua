@@ -1,5 +1,5 @@
 if not fs.exists( "/thunder" ) then
-  h = http.get( "" )
+  h = http.get( "https://raw.githubusercontent.com/lewislovesgames/Thunderflash-HTTP-Browser/master/thunder.lua" )
   f = fs.open( "thunder", "w" )
   f.write( h.readAll() )
   f.close()

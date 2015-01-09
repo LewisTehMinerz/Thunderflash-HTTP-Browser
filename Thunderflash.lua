@@ -18,8 +18,8 @@ if not fs.exists( "/thunderflash/config" ) then
     "Terminate",
   }
   local items2 = {
-    "Standard"
-    "Advanced (For Developers)"
+    "Standard",
+    "Advanced (For Developers)",
   }
   selected = ui.menu( items, "Thunderflash Setup Utility", 1, false )
   if selected == 1 then
